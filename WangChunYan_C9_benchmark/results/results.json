@@ -1,0 +1,407 @@
+{
+  "benchmark": "SynthLearn",
+  "track": "Track 1 - Learning",
+  "generated": "2026-10-03",
+  "config": {
+    "universes": 10,
+    "symbols": 4,
+    "use_unary": false,
+    "n_phase_a": 40,
+    "n_phase_b": 100,
+    "n_phase_c": 60,
+    "min_leaves": 3,
+    "max_leaves": 6
+  },
+  "summary": {
+    "random": {
+      "phase_a_mean": 0.2325,
+      "phase_b_mean": 0.261,
+      "phase_c_mean": 0.2317,
+      "learning_gain_mean": 0.0285,
+      "feedback_gain_mean": -0.0293
+    },
+    "majority": {
+      "phase_a_mean": 0.2325,
+      "phase_b_mean": 0.378,
+      "phase_c_mean": 0.3483,
+      "learning_gain_mean": 0.1455,
+      "feedback_gain_mean": -0.0297
+    },
+    "rote": {
+      "phase_a_mean": 0.2325,
+      "phase_b_mean": 0.378,
+      "phase_c_mean": 0.3483,
+      "learning_gain_mean": 0.1455,
+      "feedback_gain_mean": -0.0297
+    },
+    "symbolic (oracle)": {
+      "phase_a_mean": 0.2325,
+      "phase_b_mean": 1.0,
+      "phase_c_mean": 1.0,
+      "learning_gain_mean": 0.7675,
+      "feedback_gain_mean": 0.0
+    }
+  },
+  "universes": [
+    {
+      "seed": 0,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.2,
+        "phase_b": 0.2,
+        "phase_c": 0.2167,
+        "learning_gain": 0.0,
+        "feedback_gain": 0.0167
+      },
+      "majority": {
+        "phase_a": 0.2,
+        "phase_b": 0.16,
+        "phase_c": 0.25,
+        "learning_gain": -0.04,
+        "feedback_gain": 0.09
+      },
+      "rote": {
+        "phase_a": 0.2,
+        "phase_b": 0.16,
+        "phase_c": 0.25,
+        "learning_gain": -0.04,
+        "feedback_gain": 0.09
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.2,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.8,
+        "feedback_gain": 0.0
+      },
+      "efficiency_curve": [
+        {
+          "k": 2,
+          "accuracy": 0.22
+        },
+        {
+          "k": 4,
+          "accuracy": 0.22
+        },
+        {
+          "k": 6,
+          "accuracy": 0.24
+        },
+        {
+          "k": 8,
+          "accuracy": 0.34
+        },
+        {
+          "k": 10,
+          "accuracy": 0.41
+        },
+        {
+          "k": 12,
+          "accuracy": 0.61
+        },
+        {
+          "k": 14,
+          "accuracy": 0.73
+        },
+        {
+          "k": 16,
+          "accuracy": 1.0
+        }
+      ],
+      "feedback_completion_demo": {
+        "capacity": 8,
+        "acc_before": 0.31,
+        "acc_after": 1.0,
+        "feedback_gain": 0.69
+      }
+    },
+    {
+      "seed": 1,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.25,
+        "phase_b": 0.24,
+        "phase_c": 0.3333,
+        "learning_gain": -0.01,
+        "feedback_gain": 0.0933
+      },
+      "majority": {
+        "phase_a": 0.25,
+        "phase_b": 0.49,
+        "phase_c": 0.6,
+        "learning_gain": 0.24,
+        "feedback_gain": 0.11
+      },
+      "rote": {
+        "phase_a": 0.25,
+        "phase_b": 0.49,
+        "phase_c": 0.6,
+        "learning_gain": 0.24,
+        "feedback_gain": 0.11
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.25,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.75,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 2,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.275,
+        "phase_b": 0.29,
+        "phase_c": 0.1833,
+        "learning_gain": 0.015,
+        "feedback_gain": -0.1067
+      },
+      "majority": {
+        "phase_a": 0.275,
+        "phase_b": 0.33,
+        "phase_c": 0.4167,
+        "learning_gain": 0.055,
+        "feedback_gain": 0.0867
+      },
+      "rote": {
+        "phase_a": 0.275,
+        "phase_b": 0.33,
+        "phase_c": 0.4167,
+        "learning_gain": 0.055,
+        "feedback_gain": 0.0867
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.275,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.725,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 3,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.15,
+        "phase_b": 0.25,
+        "phase_c": 0.2833,
+        "learning_gain": 0.1,
+        "feedback_gain": 0.0333
+      },
+      "majority": {
+        "phase_a": 0.15,
+        "phase_b": 0.46,
+        "phase_c": 0.35,
+        "learning_gain": 0.31,
+        "feedback_gain": -0.11
+      },
+      "rote": {
+        "phase_a": 0.15,
+        "phase_b": 0.46,
+        "phase_c": 0.35,
+        "learning_gain": 0.31,
+        "feedback_gain": -0.11
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.15,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.85,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 4,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.25,
+        "phase_b": 0.21,
+        "phase_c": 0.2,
+        "learning_gain": -0.04,
+        "feedback_gain": -0.01
+      },
+      "majority": {
+        "phase_a": 0.25,
+        "phase_b": 0.38,
+        "phase_c": 0.2667,
+        "learning_gain": 0.13,
+        "feedback_gain": -0.1133
+      },
+      "rote": {
+        "phase_a": 0.25,
+        "phase_b": 0.38,
+        "phase_c": 0.2667,
+        "learning_gain": 0.13,
+        "feedback_gain": -0.1133
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.25,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.75,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 5,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.225,
+        "phase_b": 0.28,
+        "phase_c": 0.2,
+        "learning_gain": 0.055,
+        "feedback_gain": -0.08
+      },
+      "majority": {
+        "phase_a": 0.225,
+        "phase_b": 0.35,
+        "phase_c": 0.1667,
+        "learning_gain": 0.125,
+        "feedback_gain": -0.1833
+      },
+      "rote": {
+        "phase_a": 0.225,
+        "phase_b": 0.35,
+        "phase_c": 0.1667,
+        "learning_gain": 0.125,
+        "feedback_gain": -0.1833
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.225,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.775,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 6,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.25,
+        "phase_b": 0.27,
+        "phase_c": 0.2333,
+        "learning_gain": 0.02,
+        "feedback_gain": -0.0367
+      },
+      "majority": {
+        "phase_a": 0.25,
+        "phase_b": 0.36,
+        "phase_c": 0.2667,
+        "learning_gain": 0.11,
+        "feedback_gain": -0.0933
+      },
+      "rote": {
+        "phase_a": 0.25,
+        "phase_b": 0.36,
+        "phase_c": 0.2667,
+        "learning_gain": 0.11,
+        "feedback_gain": -0.0933
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.25,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.75,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 7,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.1,
+        "phase_b": 0.27,
+        "phase_c": 0.2333,
+        "learning_gain": 0.17,
+        "feedback_gain": -0.0367
+      },
+      "majority": {
+        "phase_a": 0.1,
+        "phase_b": 0.47,
+        "phase_c": 0.4333,
+        "learning_gain": 0.37,
+        "feedback_gain": -0.0367
+      },
+      "rote": {
+        "phase_a": 0.1,
+        "phase_b": 0.47,
+        "phase_c": 0.4333,
+        "learning_gain": 0.37,
+        "feedback_gain": -0.0367
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.1,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.9,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 8,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.3,
+        "phase_b": 0.35,
+        "phase_c": 0.2333,
+        "learning_gain": 0.05,
+        "feedback_gain": -0.1167
+      },
+      "majority": {
+        "phase_a": 0.3,
+        "phase_b": 0.36,
+        "phase_c": 0.3667,
+        "learning_gain": 0.06,
+        "feedback_gain": 0.0067
+      },
+      "rote": {
+        "phase_a": 0.3,
+        "phase_b": 0.36,
+        "phase_c": 0.3667,
+        "learning_gain": 0.06,
+        "feedback_gain": 0.0067
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.3,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.7,
+        "feedback_gain": 0.0
+      }
+    },
+    {
+      "seed": 9,
+      "symbols": 4,
+      "random": {
+        "phase_a": 0.325,
+        "phase_b": 0.25,
+        "phase_c": 0.2,
+        "learning_gain": -0.075,
+        "feedback_gain": -0.05
+      },
+      "majority": {
+        "phase_a": 0.325,
+        "phase_b": 0.42,
+        "phase_c": 0.3667,
+        "learning_gain": 0.095,
+        "feedback_gain": -0.0533
+      },
+      "rote": {
+        "phase_a": 0.325,
+        "phase_b": 0.42,
+        "phase_c": 0.3667,
+        "learning_gain": 0.095,
+        "feedback_gain": -0.0533
+      },
+      "symbolic (oracle)": {
+        "phase_a": 0.325,
+        "phase_b": 1.0,
+        "phase_c": 1.0,
+        "learning_gain": 0.675,
+        "feedback_gain": 0.0
+      }
+    }
+  ]
+}

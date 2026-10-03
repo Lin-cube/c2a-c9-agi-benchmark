@@ -1,0 +1,5 @@
+# SynthLearn has no third-party runtime dependencies: it uses only the
+# Python standard library (random, json, collections, urllib, argparse).
+#
+# Optional: to test a real frontier model via the adapter, set
+# SYNTHLEARN_API_KEY and use any OpenAI-compatible endpoint.
